@@ -36,7 +36,7 @@ $("button").on('click', function () {
             let image = res.data.cards[0].image;
             deck_id = res.data.deck_id;
             $("div").prepend(`<img src="${image}" />`);
-            if (res.data.remaining == 0)
+            if (res.data.remaining === 0)
                 $("button").remove();
         })
 
